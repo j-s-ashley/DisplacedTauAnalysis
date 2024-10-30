@@ -37,9 +37,9 @@ RecoElectronsFromGen = RecoElectronsFromGen.matched_gen[(RecoElectronsFromGen.ma
 
 makeEffPlot("e", "coffea_100GeV_100mm", [""], "pt", 16, 20, 100, 5, "[GeV]", [gen_electrons.pt.compute()], [RecoElectronsFromGen.pt.compute()], 0, file) 
 
-#for ev in range(len(events)):
-  #print("The pdgId of the mus in event", ev, "is", gen_mus.pt.compute()[ev])
-#  print("The pt of the electrons in event", ev, "is", gen_electrons.pt.compute()[ev])
-  #print("The gen idx of the matched muon for event", ev, "is", electrons.matched_gen.compute()[ev]) 
-  #print("The dr between reco ele and gen ele for event", ev, "is", dr.compute()[ev])
-  #print("The reco electrons that trace back to gen electrons whcih decay from staus for event", ev, "are", RecoElectronsFromGen.genPartIdx.compute()[ev]) 
+for ev in range(len(events)):
+  print("The pdgId of the mus in event", ev, "is", gen_mus.pt.compute()[ev])
+  print("The pt of the electrons in event", ev, "is", gen_electrons.pt.compute()[ev])
+  print("The gen idx of the matched muon for event", ev, "is", electrons.matched_gen.compute()[ev]) 
+  print("The dr between reco ele and gen ele for event", ev, "is", dr.compute()[ev])
+  print("The reco electrons that trace back to gen electrons whcih decay from staus for event", ev, "are", RecoElectronsFromGen.genPartIdx.compute()[ev]) 
