@@ -13,7 +13,7 @@ from leptonPlot import *
 
 NanoAODSchema.warn_missing_crossrefs = False
 
-file = "Staus_M_100_100mm_13p6TeV_Run3Summer22_lpcdisptau_NanoAOD_ExtraDisMuonBranches.root"
+file = "/eos/user/d/dally/DisplacedTauAnalysis/SMS-TStauStau_MStau-100_ctau-100mm_mLSP-1_TuneCP5_13p6TeV_NanoAOD.root"
 
 #events = NanoEventsFactory.from_root({file:"Events"}, schemaclass=NanoAODSchema).events()[0:21]
 events = NanoEventsFactory.from_root({file:"Events"}).events()
